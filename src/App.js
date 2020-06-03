@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Skills from './Views/Skills'
+import { Route, Switch } from 'react-router-dom';
+import MainPage from './Views/MainPage';
 
 class App extends React.Component {
 
@@ -12,8 +13,9 @@ class App extends React.Component {
   render(){
   return (
     <div className="App" onWheel={this.onWheelAction}>
-    <Skills/>
-    
+    <Switch>
+    <Route exact path="/" render={ (props) => (<MainPage {...props} />)}/>
+    </Switch>
     </div>
   );
 }
