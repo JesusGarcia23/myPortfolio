@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 const Projects = (props) => {
 return (
-    <div>Projects</div>
+    <div className="projects-container">Projects</div>
 )
 }
 

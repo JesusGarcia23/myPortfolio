@@ -1,6 +1,5 @@
-#root {
+.App {
   text-align: center;
-  background-color: "red";
   height: 200px;
   width: 200px;
 }
@@ -8,6 +7,10 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.projects-container {
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
