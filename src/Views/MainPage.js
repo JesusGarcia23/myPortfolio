@@ -5,7 +5,11 @@ import Projects from './Projects';
 const MainPage = (props) => {
 
     return(
-        <Skills/>
+        <div className='mainPage'>
+        <div>Welcome</div>
+        <div>to</div>
+        <div>my World</div>
+        </div>
     )
 
 }
