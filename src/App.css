@@ -1,3 +1,14 @@
+html{
+  margin:0;
+  padding:0;
+  max-height:100vh;
+  overflow:hidden;
+}
+
+body {
+  height: 100%;
+}
+
 .App {
   text-align: center;
   height: 200px;
@@ -13,8 +24,15 @@
   color: white;
 }
 
+.mainPage {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .mainPage > div {
-  color: white
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {

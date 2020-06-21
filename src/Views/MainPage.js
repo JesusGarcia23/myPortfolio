@@ -6,9 +6,9 @@ const MainPage = (props) => {
 
     return(
         <div className='mainPage'>
-        <div>Welcome</div>
-        <div>to</div>
-        <div>my World</div>
+        <div className='main-first-text'>Welcome</div>
+        <div className='main-second-text'>to</div>
+        <div className='main-third-text'>my World</div>
         </div>
     )
 

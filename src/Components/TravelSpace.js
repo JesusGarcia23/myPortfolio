@@ -4,7 +4,6 @@ const TravelSpace = (props) => {
     return (
         <div  class='starry-sky'>
             <div class='stars-backdrop'></div>
-            <div>Center</div>
             <div class='stars'></div>
         </div>
     )
