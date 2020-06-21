@@ -28,7 +28,7 @@ export default () => (
           shape: {
             type: "circle",
             stroke: {
-              width: 2,
+              width: 0,
               color: "#F0FFFF"
             },
             polygon: {

@@ -32,7 +32,7 @@ body{
   .starry-sky{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,2,29,1) 100%, rgba(0,212,255,1) 100%);
+    background:  linear-gradient(90deg, rgb(1, 0, 7) 0%, rgba(12,2,29,1) 100%, rgb(4, 49, 58) 100%);
     -webkit-perspective: 500px;
     -webkit-transform-style: preserve-3d;
   }
@@ -49,7 +49,7 @@ body{
   
   .stars{
     @extend .stars-backdrop;
-    animation: space-travel $animation-time infinite linear;
+    animation: space-travel $animation-time 5 linear;
     transform-origin: top left;
     transform: rotate(90deg);
   }
@@ -57,7 +57,7 @@ body{
   .starry-sky:before{
     @extend .stars-backdrop;
     content: '';
-    animation: space-travel $animation-time infinite linear;
+    animation: space-travel $animation-time 5 linear;
     animation-delay: $animation-time*(1/3);
     transform-origin: top left;
   }
@@ -65,7 +65,7 @@ body{
   .starry-sky:after{
     @extend .stars-backdrop;
     content: '';
-    animation: space-travel $animation-time infinite linear;
+    animation: space-travel $animation-time 5 linear;
     animation-delay: $animation-time*(2/3);
   }
   

@@ -27,12 +27,69 @@ body {
 .mainPage {
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-size: 12vh;
+  font-weight: bold;
+  font-family: monospace;
+  animation: fadeOutAnimation linear 1s forwards;
+  animation-delay: 3s;
 }
 
 .mainPage > div {
-  color: white;
+  margin: 5vh 0;
+
+}
+
+.main-first-text {
+    opacity: 0;
+    animation: fadeInAnimation linear 2s forwards;
+}
+
+.main-second-text {
+  opacity: 0;
+  animation: fadeInAnimation linear 2s forwards;
+  animation-delay: 1s;
+}
+
+.main-third-text {
+  opacity: 0;
+  animation: fadeInAnimation linear 2s forwards;
+  animation-delay: 2s;
+}
+
+#tsparticles {
+  animation: changeBackGround linear 1s forwards;
+  animation-delay: 4s;
+}
+
+@keyframes changeBackGround {
+  0% { 
+    background-color: linear-gradient(135deg, #000000 0%, #1F013B 88%, #3B1175 100%); 
+} 
+100% {
+    background-color: rgb(9, 0, 14);
+}
+}
+
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% {
+      opacity: 1;
+  }
+} 
+
+@keyframes fadeOutAnimation {
+  0% { 
+    opacity: 1; 
+  } 
+  100% {
+      opacity: 0;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
