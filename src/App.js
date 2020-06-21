@@ -1,9 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './travelSpace.scss';
 import { Route, Switch } from 'react-router-dom';
 import MainPage from './Views/MainPage';
 import ParticlesComponent from './Components/ParticlesComponent';
+import TravelSpace from './Components/TravelSpace'
 import Projects from './Views/Projects';
 
 class App extends React.Component {
@@ -35,6 +37,7 @@ class App extends React.Component {
         >
           <Route exact path="/" render={ (props) => (<MainPage {...props} />)}/>
           <Route exact path="/Projects" render={ (props) => (<Projects {...props} />)}/>
+          <Route exact path='/test' render={(props) => (<TravelSpace {...props}/>)}/>
         </div>
     </div>
     </Switch>

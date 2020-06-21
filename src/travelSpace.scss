@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+  }
+  
+  $animation-time: 0.45s;
+
+  @function givePosition() {
+      $location: random() * 100vw;
+      @while $location > 45 and $location < 55 {
+        $location: random() * 100;
+      }
+
+      @return $location + 0vw;
+  }
+
+  @function makeStars($numStars){
+    $stars: ();
+    @for $i from 0 through $numStars {
+      $x: givePosition();
+      $y: random() * 100vh;
+      $addSize: 1;
+      $color: white;
+      $star: ($x, $y, 0px, 0px + $addSize, $color);
+      $stars: append($stars, join($star, (), 'space'));
+    }
+    @return join($stars, (), 'comma')
+  }
+  
+  $numStars: 80;
+  $madeStars: makeStars($numStars);
+  
+  .starry-sky{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,2,29,1) 100%, rgba(0,212,255,1) 100%);
+    -webkit-perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+  }
+  
+  .stars-backdrop{
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-radius: 0%;
+    box-shadow: #{$madeStars};
+    opacity: 0;
+    //animation: blink $animation-time/3 infinite linear alternate;
+  }
+  
+  .stars{
+    @extend .stars-backdrop;
+    animation: space-travel $animation-time infinite linear;
+    transform-origin: top left;
+    transform: rotate(90deg);
+  }
+  
+  .starry-sky:before{
+    @extend .stars-backdrop;
+    content: '';
+    animation: space-travel $animation-time infinite linear;
+    animation-delay: $animation-time*(1/3);
+    transform-origin: top left;
+  }
+  
+  .starry-sky:after{
+    @extend .stars-backdrop;
+    content: '';
+    animation: space-travel $animation-time infinite linear;
+    animation-delay: $animation-time*(2/3);
+  }
+  
+  
+  @keyframes blink{
+    0%{
+      opacity: 0;
+    }
+    
+    100%{
+      opacity: 0;
+    }
+  }
+  
+  @keyframes space-travel{
+    0%{
+      opacity: 0;
+      transform: translateZ(0px) translateX(0px) rotateZ(0);
+      
+    }
+    
+    30%{
+      opacity: 5;
+    }
+    
+    100%{
+      opacity: 5;
+      transform: translateZ(500px) translateX(0px) rotateZ(0deg);
+    }
+  }
