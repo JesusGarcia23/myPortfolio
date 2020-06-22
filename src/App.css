@@ -24,7 +24,7 @@ body {
   color: white;
 }
 
-.mainPage {
+.openingPage {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -38,23 +38,23 @@ body {
   animation-delay: 3s;
 }
 
-.mainPage > div {
+.openingPage > div {
   margin: 5vh 0;
 
 }
 
-.main-first-text {
+.opening-first-text {
     opacity: 0;
     animation: fadeInAnimation linear 2s forwards;
 }
 
-.main-second-text {
+.opening-second-text {
   opacity: 0;
   animation: fadeInAnimation linear 2s forwards;
   animation-delay: 1s;
 }
 
-.main-third-text {
+.opening-third-text {
   opacity: 0;
   animation: fadeInAnimation linear 2s forwards;
   animation-delay: 2s;
@@ -63,6 +63,87 @@ body {
 #tsparticles {
   animation: changeBackGround linear 1s forwards;
   animation-delay: 4s;
+}
+
+.mainPage-container {
+  display: flex;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+}
+
+.mainPage-leftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dotsContainer {
+  display: flex;
+  color: white;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 5vw;
+}
+
+.red-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa {
+  font-size: 60;
+  color: gray;
+}
+
+.fa:hover {
+  opacity: 1;
+  color: white;
+}
+
+.red-container > a {
+  font-size: 60;
+  margin:  1vh 0;
+}
+
+
+
+.mainPage-sections {
+  color: white;
+  border: 1px solid red;
+  width: 90vw;
+}
+
+.summary-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid yellow;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9vh;
+  font-weight: bold;
+  align-self: baseline;
+  margin: 10vh 5vw;
+  width: 60vw;
+  text-align: left;
+  border: 1px solid palevioletred;
+}
+
+.summary-text-container {
+  font-family: 'Candara';
+  font-weight: bold;
+  font-size: 4vh;
+  margin: 6vh 6vw;
+  text-align: left;
+  border: 1px solid green;
 }
 
 @keyframes changeBackGround {

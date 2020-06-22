@@ -15,7 +15,7 @@ const MainPage = (props) => {
     if(timeToTravel) {
         return <TravelSpace/>
     }else{
-        return <WelcomeText/>
+        return <WelcomeText />
     }
 }
 

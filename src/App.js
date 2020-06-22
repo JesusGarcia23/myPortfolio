@@ -7,17 +7,16 @@ import OpeningPage from './Views/OpeningPage';
 import ParticlesComponent from './Components/ParticlesComponent';
 import TravelSpace from './Components/TravelSpace'
 import Projects from './Views/Projects';
+import MainPage from './Components/MainPage';
 
 class App extends React.Component {
 
-  onWheelAction = (event) => {
-    console.log(event)
-  }
+
 
   render(){
   return (
     <Switch>
-    <div className="App" onWheel={this.onWheelAction}         
+    <div className="App"       
     style={{
       position: "absolute",
       top: 0,
@@ -37,7 +36,7 @@ class App extends React.Component {
         >
           <Route exact path="/" render={ (props) => (<OpeningPage {...props} />)}/>
           <Route exact path="/Projects" render={ (props) => (<Projects {...props} />)}/>
-          <Route exact path='/test' render={(props) => (<TravelSpace {...props}/>)}/>
+          <Route exact path="/Test" render={ (props) => (<MainPage {...props} />)}/>
         </div>
     </div>
     </Switch>
