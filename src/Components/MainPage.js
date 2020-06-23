@@ -10,7 +10,12 @@ const MainPage = (props) => {
 
     const isSelected = {
         color: 'white',
-        fontSize: '17'
+        fontSize: 17
+    }
+  
+    const isNotSelected = {
+        color: 'gray',
+        fontSize: 13
     }
 
     const dotSelected = {
@@ -29,38 +34,10 @@ const MainPage = (props) => {
         margin: 9
     }
 
-    const isNotSelected = {
-        color: 'gray',
-        fontSize: '12'
-    }
-
-    const [firstDot, setFirstDot] = useState(15);
-    const [secondDot, setSecondDot] = useState(10);
-    const [thirdDot, setThirdDot] = useState(10);
 
     useEffect(() => {
         setTimeout(() => {setPageReady(true)}, 1500);
     })
-
-    const goToSection = (event) => {
-        event.preventDefault();
-        switch(event.target.id){
-            case "dot-2":
-                setPageLevel(1)
-                updateDot(1)
-                break;
-            case "dot-3":
-                setPageLevel(0)
-                updateDot(0)
-                break;
-            case "dot-1":
-                setPageLevel(2)
-                updateDot(2)
-                break;
-            default:
-                return;
-    }  
-    }
 
     const updatePageLevel = (event, type, number) => {
         if(pageReady) {
@@ -80,27 +57,6 @@ const MainPage = (props) => {
             }
             
         }
-    }
-
-    const updateDot =(value) => {
-        switch(value){
-            case 1:
-                setFirstDot(10);
-                setSecondDot(15);
-                setThirdDot(10);
-                break;
-            case 0:
-                setFirstDot(10);
-                setSecondDot(10);
-                setThirdDot(15);
-                break;
-            default: 
-                setFirstDot(15);
-                setSecondDot(10);
-                setThirdDot(10);
-                break;
-        }
-
     }
 
     return(
