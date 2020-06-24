@@ -1,20 +1,17 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const ProjectDetails = (props) => {
 
-    
-    const listOfProjects = {
-        "WalkingInDarkness": {
-            "description": "It's a game"
-        }
-    }
-    if(props.params !== "") {
-        console.log(listOfProjects[props.match.params.projectName])
-    }
+
     console.log(props)
     
     return (
-        <div>Project Detail page</div>
+        <div>
+        <div onClick={e => props.clickFunction(false)}>Close</div>
+        <h1>Project Detail page</h1>
+        <h2>{props.projectValues && props.projectValues.title}</h2>
+        </div>
     )
 }
 

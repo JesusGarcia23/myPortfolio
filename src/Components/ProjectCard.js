@@ -1,13 +1,11 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 const ProjectCard = (props) => {
+    console.log(props)
     return (
-        <Link to={`/Project/${props.projectTitle}`}>
-        <div>
-        Hello World
+        <div onClick={e => props.clickFunction(props.projectUri)}>
+        {props.projectTitle}
         </div>
-        </Link>
     )
 }
 
