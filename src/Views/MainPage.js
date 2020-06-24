@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Summary from './Summary';
-import Skills from './Skills';
-import Projects from './Projects';
+import Summary from '../Components/Summary';
+import Skills from '../Components/Skills';
+import Projects from '../Components/Projects';
 
 const MainPage = (props) => {
 

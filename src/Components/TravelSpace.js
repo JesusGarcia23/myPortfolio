@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import MainPage from './MainPage';
+import MainPage from '../Views/MainPage';
 
 const TravelSpace = (props) => {
 

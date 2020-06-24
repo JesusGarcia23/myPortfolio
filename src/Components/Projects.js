@@ -1,9 +1,16 @@
 import React from 'react';
+import ProjectCard from './ProjectCard';
 
 const Projects = () => {
 
+
     return(
-        <div>Projects Sections</div>
+        <div className='projects-container'>
+        <h1>Projects</h1>
+        <div className='projectcards-container'>
+        <ProjectCard projectTitle="WalkingInDarkness" projectImg="" projectDescription=""/>
+        </div>
+        </div>
     )
 }
 
