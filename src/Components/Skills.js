@@ -12,7 +12,7 @@ const Skills = () => {
         <TechnologyCard title="CSS" img={'css-logo.png'}/>
         <TechnologyCard title="Javascript" img={'Javascript-logo.png'}/>
         <TechnologyCard title="NodeJS" img={'nodejs-logo.png'}/>
-        <TechnologyCard title="React" img={'logo192.png'}/>
+        <TechnologyCard title="ReactJS" img={'logo192.png'}/>
         <TechnologyCard title="Jest" img={'jest-logo.png'}/>
         <TechnologyCard title="Python" img={'python-logo.png'}/>
         <TechnologyCard title="MongoDB" img={'mongodb-logo.png'}/>

@@ -10,7 +10,8 @@ const Summary = (props) => {
         
         <div className= 'summary-text-container'>
         <div className='summary-text'>
-        I'm a full-stack web developer who likes learning new stuff
+        I'm a passionate full-stack web developer who loves technology in general,
+         
         </div>
         </div>
 
