@@ -7,10 +7,11 @@ const ProjectDetails = (props) => {
     console.log(props)
     
     return (
+        <div className='projectdetail-container'>
         <div>
-        <div onClick={e => props.clickFunction(false)}>Close</div>
-        <h1>Project Detail page</h1>
+        <span onClick={e => props.clickFunction(false)}>Close</span>
         <h2>{props.projectValues && props.projectValues.title}</h2>
+        </div>
         </div>
     )
 }

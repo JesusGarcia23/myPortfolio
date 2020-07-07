@@ -7,6 +7,7 @@ const MainPage = (props) => {
 
     const [ pageLevel, setPageLevel ] = useState(2);
     const [ pageReady, setPageReady ] = useState(false);
+    const [ isProjectDetailOpened, setProjectDetailOpened ] = useState(false)
 
     const isSelected = {
         color: 'white',
@@ -43,6 +44,9 @@ const MainPage = (props) => {
         if(pageReady) {
             switch(type){
                 case "scroll": 
+                if(isProjectDetailOpened) {
+                    return;
+                }
                 if(event.deltaY < 0 && pageLevel < 2) {
                     setPageLevel(pageLevel + 1)
                 }else if(event.deltaY > 0 && pageLevel > 0){
@@ -91,7 +95,7 @@ const MainPage = (props) => {
         <div className='mainPage-sections'>
         {pageLevel === 2 && <Summary/>}
         {pageLevel === 1 && <Skills/>}
-        {pageLevel === 0 && <Projects/>}
+        {pageLevel === 0 && <Projects openProjectDetail={setProjectDetailOpened}/>}
         </div>
         </div>
     )
