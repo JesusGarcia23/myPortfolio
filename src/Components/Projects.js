@@ -11,15 +11,18 @@ const Projects = (props) => {
     const listOfProjects = {
         "walkingInDarkness": {
             "title": "Walking in Darkness",
-            "description": "It's a game"
+            "description": "A JavaScript game created to further deepen my skills, where the player has to follow the objectives solving puzzles to make his way through the game.\n Technologies used: JavaScript, HTML, CSS.",
+            "url": "https://jesusgarcia23.github.io/JesusGarcia23.github.io"
         },
         "codey": {
             "title": "Codey",
-            "description": "Full-stack App"
+            "description": "Full Stack application. It features full CRUD, validation, multiple end communication, APIS, Data Management, Friend Request system and a simple Javascript compiler.\n Technologies used: Express, Node.js, Handlebars, Javascript, Socket.io, Mongoose, MongoDB, Passport, Bootsrap, CSS",
+            "url": "https://thecodey.herokuapp.com"
         },
         "triShare": {
             "title": "TriShare",
-            "description": "Full-stack App"
+            "description": "MERN Stack application. Cross user communication via Socket.io. Trishare allows users to upload equirectangular images, share their experiences with 360 image viewer included to provide users an immersive experience while featuring a social media interface with likes, comments and notifications. Including. \n Technologies used: JavaScript, Three.js, React.js, Express.js, Mongoose, Passport.js, Node.js, Socket.io, HTML, CSS, and Bootstrap.",
+            "url": "https://trishare.herokuapp.com/"
         }
     } 
 
@@ -38,12 +41,10 @@ const Projects = (props) => {
         <div className='projects-container'>
         <h1>Projects</h1>
         <div className='projectcards-container'>
-        <ProjectCard clickFunction={openProjectDetails} projectTitle="Walking In Darkness" projectImg="WalkingInDarkness.png" projectDescription="A JavaScript game created to further deepen my skills, where the player has to follow the objectives solving puzzles
-        to make his way through the game. Tech.: JavaScript, HTML, CSS." projectUrl="https://jesusgarcia23.github.io/JesusGarcia23.github.io" projectUri="walkingInDarkness" projectDetailImg="" projectDetailSecondImg=""/>
-        <ProjectCard clickFunction={openProjectDetails} projectTitle="Codey" projectImg="Codey.png" projectDescription="This project was created by Fabricio Policarpo and I. It features full CRUD, validation, multiple end communication, APIS, Data Management, Friend Request system and a simple Javascript compiler.
-        Technologies used: Express, Node.js, Handlebars, Javascript, Socket.io, Mongoose, MongoDB, Passport, Bootsrap, CSS" projectUrl="https://thecodey.herokuapp.com" projectUri="codey" projectDetailImg="" projectDetailSecondImg=""/>
-        <ProjectCard clickFunction={openProjectDetails} projectTitle="TriShare" projectImg="Trishare.png" projectDescription="Full Stack MERN CRUD application. Cross user communication via Socket.io. Trishare allows users to upload equirectangular images, share their experiences with 360 image viewer included to provide users an immersive experience while featuring a social media interface with likes, comments and notifications. Including. Tech.: JavaScript, Three.js, React.js, Express.js, Mongoose, Passport.js, Node.js, Socket.io, HTML, CSS, and Bootstrap."
-         projectUrl="https://trishare.herokuapp.com/" projectUri="triShare" projectDetailImg="" projectDetailSecondImg=""/>
+        <ProjectCard clickFunction={openProjectDetails} projectTitle="Walking In Darkness" projectImg="WalkingInDarkness.png" projectDescription="" projectUrl="" projectUri="walkingInDarkness" projectDetailImg="" projectDetailSecondImg=""/>
+        <ProjectCard clickFunction={openProjectDetails} projectTitle="Codey" projectImg="Codey.png" projectDescription="" projectUrl="" projectUri="codey" projectDetailImg="" projectDetailSecondImg=""/>
+        <ProjectCard clickFunction={openProjectDetails} projectTitle="TriShare" projectImg="Trishare.png" projectDescription=""
+         projectUrl="" projectUri="triShare" projectDetailImg="" projectDetailSecondImg=""/>
         </div>
 
         <div>

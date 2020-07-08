@@ -304,6 +304,12 @@ body {
   margin-top: 0;
 }
 
+.projectdetail-container > div > p {
+  font-size: 3vh;
+  margin: 0 4vw;
+  text-align: left;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
