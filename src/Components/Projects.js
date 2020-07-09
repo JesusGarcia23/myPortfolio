@@ -12,17 +12,20 @@ const Projects = (props) => {
         "walkingInDarkness": {
             "title": "Walking in Darkness",
             "description": "A JavaScript game created to further deepen my skills, where the player has to follow the objectives solving puzzles to make his way through the game.\n Technologies used: JavaScript, HTML, CSS.",
-            "url": "https://jesusgarcia23.github.io/JesusGarcia23.github.io"
+            "url": "https://jesusgarcia23.github.io/JesusGarcia23.github.io",
+            "images": ["WalkingInDarkness1.png", "WalkingInDarkness2.png"]
         },
         "codey": {
             "title": "Codey",
-            "description": "Full Stack application. It features full CRUD, validation, multiple end communication, APIS, Data Management, Friend Request system and a simple Javascript compiler.\n Technologies used: Express, Node.js, Handlebars, Javascript, Socket.io, Mongoose, MongoDB, Passport, Bootsrap, CSS",
-            "url": "https://thecodey.herokuapp.com"
+            "description": "Full Stack application. Pair-programming app where users can chat and write Javascript code in real time. Technologies used: Express, Node.js, Handlebars, Javascript, Socket.io, Mongoose, MongoDB, Passport, Bootsrap, CSS",
+            "url": "https://thecodey.herokuapp.com",
+            "images": ["codey1.png", "codey2.png"]
         },
         "triShare": {
             "title": "TriShare",
             "description": "MERN Stack application. Cross user communication via Socket.io. Trishare allows users to upload equirectangular images, share their experiences with 360 image viewer included to provide users an immersive experience while featuring a social media interface with likes, comments and notifications. Including. \n Technologies used: JavaScript, Three.js, React.js, Express.js, Mongoose, Passport.js, Node.js, Socket.io, HTML, CSS, and Bootstrap.",
-            "url": "https://trishare.herokuapp.com/"
+            "url": "https://trishare.herokuapp.com/",
+            "images": ["Trishare1.png", "Trishare2.png"]
         }
     } 
 

@@ -299,15 +299,42 @@ body {
   width: 60vw;
 }
 
-.projectdetail-container > div > h2 {
+
+.projectdetailImg-container {
+  display: flex;
+  justify-content: space-between;
+  height: 30vh;
+  width: 50vw;
+  align-self: center;
+}
+
+.projectdetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectdetail > h2 {
   font-size: 5vh;
   margin-top: 0;
 }
 
-.projectdetail-container > div > p {
-  font-size: 3vh;
-  margin: 0 4vw;
+.projectdetail > p {
+  font-size: 2.5vh;
+  margin: 2vh 5vw;
   text-align: left;
+}
+
+.projectdetail > a {
+  font-size: 3vh;
+  margin-top: 3vh;
+  text-align: right;
+}
+
+.projectdetailImg-container > img {
+  width: 22vw;
+  height: 28vh;
 }
 
 @keyframes App-logo-spin {
