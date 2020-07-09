@@ -11,27 +11,27 @@ const MainPage = (props) => {
 
     const isSelected = {
         color: 'white',
-        fontSize: 17
+        fontSize: '1.5vh'
     }
   
     const isNotSelected = {
         color: 'gray',
-        fontSize: 13
+        fontSize: '1.5vh'
     }
 
     const dotSelected = {
         backgroundColor: 'white',
         borderRadius: 50,
-        width: 15,
-        height: 15,
+        width: '12px',
+        height: '12px',
         margin: 9
     }
 
     const dotNotSelected = {
         backgroundColor: 'gray',
         borderRadius: 50,
-        width: 10,
-        height: 10,
+        width: '10px',
+        height: '10px',
         margin: 9
     }
 
@@ -93,7 +93,7 @@ const MainPage = (props) => {
         </div>
 
         <div className='mainPage-sections'>
-        {pageLevel === 2 && <Summary/>}
+        {pageLevel === 2 && <Summary pageReady={pageReady}/>}
         {pageLevel === 1 && <Skills/>}
         {pageLevel === 0 && <Projects openProjectDetail={setProjectDetailOpened}/>}
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Summary = (props) => {
     return (
-        <div className='summary-container'>
+        <div className={props.pageReady ? 'summary-container-deactivated' : 'summary-container'}>
         
         <div className='summary-header'>
         My name is Jesus Garcia
