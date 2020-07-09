@@ -315,6 +315,20 @@ body {
   align-items: center;
 }
 
+.projectdetail > span {
+  align-self: flex-end;
+  margin-right: 2vw;
+}
+
+.projectdetail > span > i {
+  font-size: 4vh;
+  color: black;
+}
+
+.projectdetail > span > i:hover {
+  color: gray;
+}
+
 .projectdetail > h2 {
   font-size: 5vh;
   margin-top: 0;
