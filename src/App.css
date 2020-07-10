@@ -13,6 +13,7 @@ body {
   text-align: center;
   height: 200px;
   width: 200px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .App-logo {
@@ -33,14 +34,13 @@ body {
   color: white;
   font-size: 12vh;
   font-weight: bold;
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
   animation: fadeOutAnimation linear 1s forwards;
   animation-delay: 3s;
 }
 
 .openingPage > div {
   margin: 5vh 0;
-
 }
 
 .opening-first-text {
@@ -61,6 +61,7 @@ body {
 }
 
 #tsparticles {
+  height: 100%;
   animation: changeBackGround linear 1s forwards;
   animation-delay: 4s;
 }
@@ -158,7 +159,7 @@ body {
 }
 
 .summary-text-container {
-  font-family: 'Candara';
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 4.6vh;
   line-height: 5.7vh;
@@ -178,6 +179,7 @@ body {
 
 .summary-text-container > i {
   font-size: 2.5vh;
+  font-weight: lighter;
 }
 
 @keyframes fadeAndScale {
@@ -319,6 +321,7 @@ body {
   border-radius: 25px;
   height: 80vh;
   width: 60vw;
+  
 }
 
 
@@ -333,25 +336,18 @@ body {
 .projectdetail {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .projectdetail > span {
   height: 3vh;
-  align-self: flex-end;
-  text-align: start;
-  margin-right: 3vw;
-  font-size: 4vh;
-  color: black;
+  width: 95%;
+  text-align: end;
+  font-size: 3vh;
 }
 
-.projectdetail > span > i {
-  color: black;
-}
-
-
-.projectdetail > span > i:hover {
+.projectdetail > span:hover {
   color: gray;
   cursor: pointer;
 }
@@ -554,6 +550,188 @@ body {
 
   .projectdetail > p {
     font-size: 1.5vh;
+  }
+
+  .projectdetail > a {
+    font-size: 2vh;
+    margin: 1vh 0;
+  }
+
+  .projectdetailImg-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .projectdetailImg-container > img:nth-child(1) {
+    width: 0;
+    height: 0;
+  }
+
+  .projectdetailImg-container > img:nth-child(2) {
+    margin: 0;
+    width: 90%;
+    height: 90%;
+  }
+
+}
+
+@media (min-width: 460px) and (max-width: 670px) {
+ 
+  #tsparticles {
+    height: 90%;
+  }
+
+  .mainPage-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .mainPage-leftside {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  
+  .red-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .red-container > a {
+    margin: 3vw;
+  }
+  
+
+  .dotsContainer {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .dot-sub {
+    margin: 2vw;
+  }
+
+  .dot-sub > div:nth-child(2) {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .mainPage-sections {
+    display: flex;
+    width: 100%;
+    height:80%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .summary-header {
+    font-size: 8vw;
+    align-self: center;
+    width: 80%;
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+  }
+
+  .summary-text {
+    margin: 0;
+    font-size: 3vh;
+    line-height: normal;
+    text-align: justify;
+  }
+
+  .summary-text-container > p {
+    margin-top: 5vh;
+    font-size: 3vh;
+    line-height: normal;
+    text-align: justify;
+  }
+
+  .summary-text-container > i {
+    margin-top: 5vh;
+    font-size: 1.5vh;
+    line-height: normal;
+    text-align: justify;
+  }
+
+  .skills-container {
+    height: 84vh;
+  }
+
+  .skills-container > h1 {
+    font-size: 8vw;
+  }
+  
+  .skills-techcard-container {
+    height: 52vh;
+  }
+
+  .techCard-container {
+    height: 15vh;
+    width: 20vw;
+  }
+
+  .techCard-container > h3 {
+    font-size: 3vw;
+  }
+
+  .techCard-container > img {
+    height: 5vh;
+    width: 5vh;
+  }
+
+  .projects-container {
+    height: 80vh;
+  }
+
+  .projects-container > h1 {
+    font-size: 8vw;
+  }
+
+  .projectcards-container {
+    height: 65vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-card {
+    height: 20vh;
+    width: 24vh;
+    font-size: 2vh;
+  }
+
+  .project-card > img {
+    height: 12vh;
+    width: 24vh;
+    margin: 0 0 1vh 0;
+  }
+
+  .projectdetail-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .projectdetail-container > div {
+    width: 85%;
+    height: 60%;
+  }
+
+  .projectdetail > h2 {
+    font-size: 3vh;
+  }
+
+  .projectdetail > span {
+    font-size: 2vh;
+    width: 90%;
+  }
+
+  .projectdetail > span:hover {
+    cursor: pointer;
+  }
+
+  .projectdetail > p {
+    font-size: 2vh;
   }
 
   .projectdetail > a {

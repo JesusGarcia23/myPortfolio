@@ -6,7 +6,7 @@ const ProjectDetails = (props) => {
     return (
         <div className='projectdetail-container'>
         <div className='projectdetail'>
-        <span onClick={e => props.clickFunction(false)}><i class="fa fa-times" aria-hidden="true"></i></span>
+        <span onClick={e => props.clickFunction(false)}>Close</span>
         <h2>{props.projectValues && props.projectValues.title}</h2>
 
         <div className='projectdetailImg-container'>
