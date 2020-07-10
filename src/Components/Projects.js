@@ -23,7 +23,7 @@ const Projects = (props) => {
         },
         "triShare": {
             "title": "TriShare",
-            "description": "MERN Stack application. Cross user communication via Socket.io. Trishare allows users to upload equirectangular images, share their experiences with 360 image viewer included to provide users an immersive experience while featuring a social media interface with likes, comments and notifications. Including. \n Technologies used: JavaScript, Three.js, React.js, Express.js, Mongoose, Passport.js, Node.js, Socket.io, HTML, CSS, and Bootstrap.",
+            "description": "MERN Stack application. Trishare allows users to upload equirectangular images, share their experiences with 360 image viewer included to provide users an immersive experience while featuring a social media interface with likes, comments and notifications. \n Technologies used: JavaScript, Three.js, React.js, Express.js, Mongoose, Passport.js, Node.js, Socket.io, HTML, CSS, and Bootstrap.",
             "url": "https://trishare.herokuapp.com/",
             "images": ["Trishare1.png", "Trishare2.png"]
         }
