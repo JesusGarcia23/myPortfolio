@@ -5,7 +5,8 @@ const Summary = (props) => {
         <div className={props.pageReady ? 'summary-container-deactivated' : 'summary-container'}>
         
         <div className='summary-header'>
-        My name is Jesus Garcia
+        <p>My name is Jesus Garcia</p>
+        <img src="myPicture.jpg" alt='profile-pic'></img>
         </div>
         
         <div className= 'summary-text-container'>
