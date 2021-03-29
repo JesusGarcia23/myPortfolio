@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import TravelSpace from '../Components/TravelSpace';
 import WelcomeText from '../Components/WelcomeText';
 // import Skills from './Skills';
