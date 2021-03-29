@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './travelSpace.scss';
 import { Route, Switch } from 'react-router-dom';
